@@ -17,7 +17,7 @@ def extract_audio_folder(input_folder, output_folder):
                 '-i', input_path,
                 '-vn',
                 '-acodec', 'libmp3lame',
-                '-b:a', '192k',   # 192kbps 권장 (필요하면 320k로 변경 가능)
+                '-b:a', '320k',   # 192kbps 권장 (필요하면 320k로 변경 가능)
                 output_path
             ]
             print(f"MP3 변환 중: {filename} -> {base_filename}.mp3")
